@@ -69,6 +69,8 @@ namespace Second_Question_Library_
                     int index1 = user.username.FindIndex(a => a.Contains(loginUsername));
                     int index2 = user.password.FindIndex(b => b.Contains(loginPassword));
                     string idType = user.type[index1];
+                    Console.Clear();
+
                     //go to employee page
                     if (index1 == index2 && idType == "2")
                     {
